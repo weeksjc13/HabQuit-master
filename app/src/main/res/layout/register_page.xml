@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the register page.
+TODO not wired up yet it doesn't go anywhere just a layout
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#DBDBDB">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/background_light" />
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ConfirmButton"
+        android:layout_alignBaseline="@+id/CancelButton"
+        android:layout_alignBottom="@+id/CancelButton"
+        android:layout_alignRight="@+id/editText9"
+        android:layout_alignEnd="@+id/editText9"
+        android:background="#C1CAD6" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/CancelButton"
+        android:background="#C1CAD6"
+        android:layout_below="@+id/editText9"
+        android:layout_alignLeft="@+id/editText9"
+        android:layout_alignStart="@+id/editText9" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/editText8"
+        android:text="Password"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/editText7"
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/editText2"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="textPersonName"
+        android:text="User Name"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText5"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText6"
+        android:text="Email"
+        android:background="@android:color/white"
+        android:layout_below="@+id/editText5"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText10"
+        android:text="Confirm Email"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/editText6"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="11dp"
+        android:id="@+id/editText7"
+        android:text="Phone Number"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/editText10"
+        android:layout_alignLeft="@+id/editText10"
+        android:layout_alignStart="@+id/editText10" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/editText9"
+        android:text="Confirm"
+        android:background="@android:color/white"
+        android:layout_below="@+id/editText8"
+        android:layout_alignLeft="@+id/editText8"
+        android:layout_alignStart="@+id/editText8" />
+</RelativeLayout>

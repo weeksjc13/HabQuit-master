@@ -1,0 +1,105 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
+// ^^ added this to make the other jakehorton and below lines to compile. ^^
+// You will need this often. Just copy and paste into every project.
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.aquamorph.habquit"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    testOptions {
+        unitTests.all {
+            jacoco {
+                includeNoLocationClasses = true
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            testCoverageEnabled false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+          abortOnError false
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'io.reactivex:rxandroid:0.24.0'
+    compile 'com.google.firebase:firebase-auth:10.2.0'
+    compile 'com.google.android.gms:play-services-auth:10.2.0'
+    compile 'com.google.android.gms:play-services-maps:10.2.0'
+    compile 'com.google.android.gms:play-services-location:10.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    testCompile "org.robolectric:robolectric:3.2.2"
+    testCompile 'org.assertj:assertj-core:1.7.1'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+}
+
+task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'createDebugCoverageReport']) {
+
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+    def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*', '**/*Test*.*', 'android/**/*.*']
+    def debugTree = fileTree(dir: "${buildDir}/intermediates/classes/debug", excludes: fileFilter)
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories = files([mainSrc])
+    classDirectories = files([debugTree])
+    executionData = fileTree(dir: "$buildDir", includes: [
+            "jacoco/testDebugUnitTest.exec",
+            "outputs/code-coverage/connected/*coverage.ec"
+    ])
+}
+
+// Must be at the bottom
+apply plugin: 'com.google.gms.google-services'

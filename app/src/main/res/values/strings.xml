@@ -1,0 +1,41 @@
+<resources>
+    // Miscellaneous strings
+    <string name="app_name">HabQuit</string>
+    <string name="count_text">Count</string>
+
+    // Bottom navigation strings
+    <string name="text_favorites">Habits</string>
+    <string name="text_schedules">Charts</string>
+    <string name="text_music">Savings</string>
+
+    // Drop down menu strings
+    <string name="add_habit">Add Habit</string>
+    <string name="select_habits">Select Habits</string>
+    <string name="achievements">Achievements</string>
+    <string name="motivational_tips">Motivational Tips</string>
+    <string name="statistics">Statistics</string>
+    <string name="manage">Manage Habits</string>
+    <string name="logout">Logout</string>
+
+    // Widget strings added by JCW
+    <string name="configure_widget">Habit name</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_title">Smoking</string>
+    <string name="widget_count">0</string>
+    <string name="widget_habit">Habit</string>
+    <string name="widget_view_desc">Symbol Representing Habit</string>
+
+    <string name="login_prompt">Please sign in with your Google account</string>
+    <string name="welcome_message">Welcome to HabQuit</string>
+
+    <string name="add_habit_name_hint">Name of Habit</string>
+    <string name="add_habit_goal_per_day_hint">Goal number per day</string>
+    <string name="add_habit_goal_date_hint">Goal Date</string>
+    <string name="add_habit_price_hint">Price Per Unit</string>
+    <string name="add_habit_curr_per_day_hint">Current number per day</string>
+    <string name="add_habit_tips_hint">Enable Tips</string>
+    <string name="add_habit_button">Add Habit</string>
+    <string name="save_habit_button">Save Changes</string>
+    <string name="delete_habit_button">Delete Habit</string>
+
+</resources>

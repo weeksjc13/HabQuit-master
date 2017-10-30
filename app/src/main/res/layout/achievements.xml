@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for achievement page-->
+<!-- TODO need to have a generic blank achievement that is
+grayed out for achievements no yet earned. Also need to
+design achievements and set criteria for them -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/achievements">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:text="Click Me"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

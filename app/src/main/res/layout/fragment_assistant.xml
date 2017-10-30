@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/cardview_dark_background"
+              android:orientation="horizontal"
+              tools:context="com.aquamorph.habquit.fragments.AssistantFragment">
+
+    <TextView
+        android:id="@+id/assistant_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/assistant"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ai_happy" />
+</LinearLayout>

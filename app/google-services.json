@@ -1,0 +1,123 @@
+{
+  "project_info": {
+    "project_number": "309646805683",
+    "firebase_url": "https://habquit.firebaseio.com",
+    "project_id": "habquit",
+    "storage_bucket": "habquit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309646805683:android:d7ee4b89567b093e",
+        "android_client_info": {
+          "package_name": "com.aquamorph.habquit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309646805683-bmusq35vrke15lt0vivnn3308ksmdtp7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "3fbf7a4933f2149d905eb3ed7824442f93291150"
+          }
+        },
+        {
+          "client_id": "309646805683-u7m0kqoag8g5j468inhciohunio3rrsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "de050a42fa19b90418ebfca050d2e3c0f0155068"
+          }
+        },
+        {
+          "client_id": "309646805683-oae45qifhrq940q01kcoaruue87tei60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "aa899cccc222f8dc0f913161f31484a9a0ae102e"
+          }
+        },
+        {
+          "client_id": "309646805683-3ggc0utha56kaj17qdsqub953m0le482.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "47276183c3a897bd843f6fefd4d8133b34853137"
+          }
+        },
+        {
+          "client_id": "309646805683-cjihu44og7fp8qeamvu1h0in0hesegij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "c18e9772eeba0de5aa0199cb9daed417d4e07aa7"
+          }
+        },
+        {
+          "client_id": "309646805683-j1gdqupb4bj8jemufasi1vd2j6dsdu95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "a57ee9355b0d9267b263c70030457c4127bf65bb"
+          }
+        },
+        {
+          "client_id": "309646805683-qdo07q16epldemcepuvgo2j4t3ml5d98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "93a9ea677863955f520c6d0df969f2abb8dfd7ee"
+          }
+        },
+        {
+          "client_id": "309646805683-bqhfbf7ikpg4b343onim3f6c3f8t0bsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "bcee82da0da7e637a910d8ff1772dc7a77fdccba"
+          }
+        },
+        {
+          "client_id": "309646805683-9c0d37n66tiedjthc0kbs6koatveh38p.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "309646805683-4tllb34626apv317j7uubr45f5e3lkmu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aquamorph.habquit",
+            "certificate_hash": "fda0cdae61a6d1276a14d0fa87562c617338e696"
+          }
+        },
+        {
+          "client_id": "309646805683-5md7ohrj3f0j4bpils344ibk7lhtpoc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADedh538oQybs2IPcYOhnVyjaecBGYIpQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309646805683-9c0d37n66tiedjthc0kbs6koatveh38p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
